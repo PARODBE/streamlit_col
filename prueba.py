@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-#from streamlit_ketcher import st_ketcher
+from streamlit_ketcher import st_ketcher
 from PIL import Image
 import rdkit
 from rdkit import Chem
@@ -26,9 +26,9 @@ import time
 st.image('juntas.png', use_column_width=False,width=300)
 
 
-#molfile = st_ketcher(molecule_format="MOLFILE")
-#st.markdown("molfile:")
-#st.code(molfile)
+molfile = st_ketcher(molecule_format="MOLFILE")
+st.markdown("molfile:")
+st.code(molfile)
 
 progress_text = "Loading transporter datasets"
 my_bar = st.progress(0, text=progress_text)
