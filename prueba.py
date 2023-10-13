@@ -1,4 +1,4 @@
-from turtle import onclick
+#from turtle import onclick
 import streamlit as st
 import numpy as np
 import pandas as pd
